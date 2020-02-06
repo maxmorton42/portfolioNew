@@ -11,8 +11,8 @@ export default [{
        Rails Back React Front Devise Token Auth
       </div>
       <div className='portfolio-item__icon'>
+        <i className="fab fa-react"></i>
         <i className="fab fa-js"></i>
-        <i className="fab fa-npm"></i>
       </div>
       <div className='portfolio-item__links'>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/maxmorton42/friendspace">GitHub</a>
@@ -31,8 +31,8 @@ export default [{
        Final Group Project.  My contributions: cart/product provider, custom routes, and Admin page
       </div>
       <div className='portfolio-item__icon'>
-        <i className="fab fa-html5"></i>
-        <i className="fab fa-css3"></i>
+      <i className="fab fa-react"></i>
+      <i className="fab fa-js"></i>
       </div>
       <div className='portfolio-item__links'>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/devpointlabs/devpoint-store">GitHub</a>
@@ -51,8 +51,8 @@ export default [{
         Simple vanilla JS flash cards with option to add delete cards
       </div>
       <div className='portfolio-item__icon'>
-        <i className="fab fa-react"></i>
         <i className="fab fa-js"></i>
+        <i className="fab fa-html5"></i>
       </div>
       <div className='portfolio-item__links'>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/maxmorton42/flashcards">GitHub</a>
