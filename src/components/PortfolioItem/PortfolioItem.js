@@ -2,21 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style';
 
-const PortfolioItem = (props, context) => {
-  const { theme: { colorPrimary, textAlternate } } = context;
+const PortfolioItem = (props,) => {
 
   if (props.render) return props.render;
   else
     return (
       <div
         className="portfolio-item"
-        style={{ backgroundColor: colorPrimary, color: textAlternate }}
+        style={{ backgroundColor: '#FFFFFF', color: '#455A64' }}
       >
         <div className="portfolio-item__title">Badass</div>
 
         <div className="portfolio-item__desc">
-          I do badass things and kickass everyday! I do badass things and
-          kickass everyday! I do badass things and kickass everyday!
+          Max's Portfolio
         </div>
         <div className="portfolio-item__icon">
           <i className="fab fa-js" />
@@ -31,8 +29,5 @@ const PortfolioItem = (props, context) => {
     );
 };
 
-PortfolioItem.contextTypes = {
-  theme: PropTypes.any
-};
 
 export default PortfolioItem;

@@ -1,32 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PortfolioItem from '@components/PortfolioItem';
-import ScrollToPrevious from '@components/ScrollToPrevious';
+
 import portfolioItems from './portfolio-items';
 
 import './style.scss';
 
 const PortfolioPage = (props, context) => {
-  const {
-    theme: { colorPrimary, colorAlternate, textAlternate, bgPrimary }
-  } = context;
 
   return (
-    <div className="portfolio-page" style={{ backgroundColor: bgPrimary }}>
+    <div className="portfolio-page" style={{ backgroundColor: '#455A64' }}>
       <div className="content-grid">
-        <h1 style={{ color: colorPrimary }}>Portfolio</h1>
+        <h1 style={{ color: '#FFFFFF' }}>Portfolio</h1>
         <div className="portfolio-wrapper">
           <style jsx="true">
             {`
               .portfolio-item {
-                background-color: ${colorPrimary};
-                color: ${textAlternate};
+                background-color: ${'#FFFFFF'};
+                color: ${'#455A64'};
               }
               .portfolio-item a {
-                color: ${textAlternate};
+                color: ${'#455A64'};
               }
               .portfolio-item__links a:hover {
-                border-bottom: 2px solid ${colorAlternate};
+                border-bottom: 2px solid ${'#455A64'};
               }
             `}
           </style>
@@ -36,7 +33,7 @@ const PortfolioPage = (props, context) => {
           ))}
         </div>
       </div>
-      <ScrollToPrevious pageSelector=".about-page" />
+
     </div>
   );
 };

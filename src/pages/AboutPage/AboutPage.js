@@ -1,65 +1,52 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ScrollToNext from '@components/ScrollToNext';
 import './style.scss';
 
-const AboutPage = (props, context) => {
-  const {
-    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary }
-  } = context;
+const AboutPage = (props,) => {
+  
 
   return (
-    <div className="about-page" style={{ backgroundColor: bgPrimary }}>
-      <style jsx="true">
-        {`
-          .highlight {
-            background-color: ${colorHighlight};
-          }
-          ::selection {
-            background-color: ${colorHighlight};
-          }
-        `}
-      </style>
+    <div className="about-page" style={{ backgroundColor: '#455A64' }}>
+
       <div className="content-grid">
-        <h1 style={{ color: colorPrimary }}>About</h1>
+        <h1 style={{ color: '#FFFFFF' }}>About</h1>
         <div className="about-wrapper">
-          <div className="about-content" style={{ color: textPrimary }}>
+          <div className="about-content" style={{ color: '#FAFAFA' }}>
             <p>
-              I like <span className="highlight">JavaScript</span> and
-              everything web.
-            </p>
-            <p>
-              When my dev senses kick-in I build presumably{' '}
-              <span className="highlight"> awesome stuff</span>. I stay close to
-              the community and try to keep tabs with the pace at which the web
-              is evolving. I also like to{' '}
-              <span className="highlight">blog</span> what I learn.
+      
             </p>
             <p>
-              I built this site <span className="highlight">from scratch</span>.
-              By scratch, I mean <i>absolutely from scratch</i>{' '}
-              <span className="highlight">
-                without any UI library/framework
-              </span>{' '}
-              (except React though) and had so much fun along the way.
+              React.js, Ruby on Rails, JavaScript, Ruby and
+              SQL are the ways I currently write code.  
+              Right now I am trying GoLang as it is often used in conjunction with Ruby on Rails to solve bottleneck issues that arise from scaling.
+               It's crazy how far I've come since using HTML and CSS!
             </p>
-            <p>
-              React-Redux, Node.js, Ruby on Rails, Java, Spring Boot, Docker and
-              AWS are the main tricks up my sleeve. I am also obsessed with making the web look pretty with SASS/CSS.
-            </p>
-            <p className="text-emoji" style={{ color: colorPrimary }}>
-              \ (•◡•) /
-            </p>
+
           </div>
         </div>
+        <h1 style={{ color: '#FFFFFF' }}>Education</h1>
+        <div className="about-wrapper">
+          <div className="about-content" style={{ color: '#FAFAFA' }}>
+            <h3>Dev Point Labs Boot Camp</h3>
+            <p>
+            This full-time 12 week course is part of the University of Utah Professional Education school, and covers HTML, CSS, Ruby on Rails, SQL, JavaScript, React, Redux, and more.
+                 DevPoint Labs' approach to learning combines pair programming with traditional lectures and a mix of group projects, lean methodologies, hackathons and one-on-one mentorship from instructors.
+            </p>
+
+            <h3>University of Utah</h3>
+            <p>
+            The Elementary Teacher Education Program in the Urban Institute for Teacher Education at the University of Utah
+                   is designed to effectively prepare teacher candidates to work with students across various age and ability levels, and from diverse cultural, linguistic, and socioeconomic backgrounds.
+            </p>
+              <br />  <br /> 
+            </div>
+            </div>
       </div>
-      <ScrollToNext pageSelector=".portfolio-page" />
+
     </div>
   );
 };
 
-AboutPage.contextTypes = {
-  theme: PropTypes.any
-};
+
 
 export default AboutPage;

@@ -2,34 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SocialIcons from '@components/SocialIcons';
 import Nav from '@components/Nav';
-import ScrollToNext from '@components/ScrollToNext';
-import BrowserNotes from '@components/BrowserNotes';
-
 import './style.scss';
 
-const LandingPage = (props, context) => {
-  const { theme: { bgPrimary, colorPrimary } } = context;
+const LandingPage = (props) => {
+  
 
   return (
-    <div style={{ backgroundColor: bgPrimary }} className="landing-page">
+    <div style={{ backgroundColor: '#455A64' }} className="landing-page">
       <Nav />
-      <main style={{ color: colorPrimary }}>
-        <BrowserNotes />
+      <main style={{ color: '#FFFFFF'}}>
         <div className="intro-wrapper">
-          <div className="intro-name">Hello, I'm Dinesh!</div>
+          <div className="intro-name">Hello, I'm Max!</div>
           <div className="tagline">
-            Full Stack Dev | Open-Source Enthusiast | Blogger | Ninja
+            Full Stack Dev | Open-Source Enthusiast | TroubleShooter
           </div>
           <SocialIcons />
         </div>
       </main>
-      <ScrollToNext pageSelector=".about-page" />
     </div>
   );
 };
 
-LandingPage.contextTypes = {
-  theme: PropTypes.any
-};
+
 
 export default LandingPage;

@@ -39,15 +39,10 @@ class Nav extends Component {
   }
 
   render() {
-    const {
-      theme: { colorPrimary, bgPrimary, navAlpha },
-      switchTheme
-    } = this.context;
-
     const stickyClass = this.state.isSticky ? 'sticky' : '';
     const stickyStyles = this.state.isSticky
-      ? { backgroundColor: navAlpha, color: colorPrimary }
-      : { backgroundColor: bgPrimary, color: colorPrimary };
+      ? { backgroundColor: 'rgba(69, 90, 100, 0.75)', color: '#FFFFFF' }
+      : { backgroundColor: '#455A64', color: '#FFFFFF' };
     return (
       <nav
         className={stickyClass}
@@ -56,17 +51,7 @@ class Nav extends Component {
         }}
         style={stickyStyles}
       >
-        <div className="magic-wand bounce-xy" onClick={(e) => switchTheme()}>
-          <button className="fas fa-magic fa-lg" href="#" />
-          <div className="magic-text">Color Me</div>
-        </div>
-        <style jsx="true">
-          {`
-            .menu__item:hover {
-              border-bottom: 2px solid ${colorPrimary};
-            }
-          `}
-        </style>
+      
         <div className="menu">
           <div
             className="menu__item active"
